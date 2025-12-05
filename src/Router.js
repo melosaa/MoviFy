@@ -12,7 +12,10 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Login from './pages/auth/Login/Login';
 import Register from './pages/auth/Register/Register';
 import Home from './pages/Home';
-
+import Icons from './assets/icons';
+import Header from './components/Header';
+import MovieView from './pages/Movie';
+import Search from './pages/';
 const Stack = createStackNavigator();
 
 const Router = () => {
@@ -33,6 +36,20 @@ const Router = () => {
           <Stack.Screen
             name="Home"
             component={Home}
+            options={{
+              header: () => (
+                <Header leftIcon={Icons.movie} rightIcon={Icons.hamburger} />
+              ),
+            }}
+          ></Stack.Screen>
+          <Stack.Screen
+            name="MovieView"
+            component={MovieView}
+            options={{ headerShown: false }}
+          ></Stack.Screen>
+          <Stack.Screen
+            name="Search"
+            component={Search}
             options={{ headerShown: false }}
           ></Stack.Screen>
         </Stack.Navigator>
