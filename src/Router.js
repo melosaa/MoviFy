@@ -15,7 +15,7 @@ import Home from './pages/Home';
 import Icons from './assets/icons';
 import Header from './components/Header';
 import MovieView from './pages/Movie';
-import Search from './pages/';
+import SearchView from './pages/Search';
 const Stack = createStackNavigator();
 
 const Router = () => {
@@ -49,8 +49,12 @@ const Router = () => {
           ></Stack.Screen>
           <Stack.Screen
             name="Search"
-            component={Search}
-            options={{ headerShown: false }}
+            component={SearchView}
+            options={{
+              header: () => (
+                <Header leftIcon={Icons.movie} rightIcon={Icons.hamburger} />
+              ),
+            }}
           ></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>

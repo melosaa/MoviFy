@@ -17,6 +17,7 @@ const Icons = {
   rate: require('../icons/MovieView/rate.png'),
   plus: require('../icons/MovieView/plus.png'),
   right_back: require('../icons/MovieView/right_back.png'),
+  searchFavorite: require('../icons/SearchBarView/favorite_icon.png'),
 };
 
 export default Icons;

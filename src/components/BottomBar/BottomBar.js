@@ -3,8 +3,10 @@ import { TouchableOpacity, View, Text, Image } from 'react-native';
 import { BlurView } from '@react-native-community/blur';
 import Icons from '../../assets/icons/index.ts';
 import styles from './BottomBar.style';
+import { useNavigation } from '@react-navigation/native';
 
-const BottomBar = ({ navigation }) => {
+const BottomBar = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.wrapper}>
       <BlurView
@@ -17,7 +19,10 @@ const BottomBar = ({ navigation }) => {
         <TouchableOpacity style={styles.item}>
           <Image style={styles.icon} source={Icons.home}></Image>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.item}>
+        <TouchableOpacity
+          style={styles.item}
+          onPress={() => navigation.navigate('Search')}
+        >
           <Image style={styles.icon} source={Icons.search}></Image>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item}>
