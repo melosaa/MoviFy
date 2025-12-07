@@ -8,7 +8,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.backGroundColor,
-    paddingHorizontal: 12,
+    paddingHorizontal: 20,
   },
   image: {
     flex: 1,
@@ -20,7 +20,6 @@ export default StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    paddingHorizontal: 16,
     paddingTop: 16,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -35,38 +34,10 @@ export default StyleSheet.create({
     color: 'white',
   },
 
-  // info_wrapper: {
-  //   position: 'absolute',
-  //   width: '100%',
-  //   bottom: -(BOTTOM_BAR_HEIGHT * 0.3),
-  // },
-
-  // infoCard: {
-  //   borderTopLeftRadius: 24,
-  //   borderTopRightRadius: 24,
-  //   borderBottomLeftRadius: 0,
-  //   borderBottomRightRadius: 0,
-  //   height: Dimensions.get('window').height / 2,
-  //   paddingHorizontal: 20,
-  //   overflow: 'hidden',
-  //   backgroundColor: 'rgba(0,0,0,0.5)',
-  // },
-  // header_button: {
-  //   width: 40,
-  //   height: 40,
-  //   borderRadius: 20,
-  //   backgroundColor: 'rgba(175, 170, 170, 0.45)',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   borderWidth: 1,
-  //   borderColor: 'rgba(175, 170, 170, 0.45)',
-  //   backdropFilter: 'blur(6px)',
-  // },
   text_container: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     marginTop: 16,
-    paddingHorizontal: 30,
   },
   divider: {
     width: 3,
@@ -83,5 +54,6 @@ export default StyleSheet.create({
   column_wrapper_style: {
     justifyContent: 'space-between',
     paddingTop: 20,
+    marginHorizontal: 0,
   },
 });

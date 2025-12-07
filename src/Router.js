@@ -16,6 +16,7 @@ import Icons from './assets/icons';
 import Header from './components/Header';
 import MovieView from './pages/Movie';
 import SearchView from './pages/Search';
+import MovieDetail from './pages/MovieDetail';
 const Stack = createStackNavigator();
 
 const Router = () => {
@@ -27,12 +28,12 @@ const Router = () => {
             name="Login"
             component={Login}
             options={{ headerShown: false }}
-          ></Stack.Screen>
+          />
           <Stack.Screen
             name="Register"
             component={Register}
             options={{ headerShown: false }}
-          ></Stack.Screen>
+          />
           <Stack.Screen
             name="Home"
             component={Home}
@@ -41,12 +42,12 @@ const Router = () => {
                 <Header leftIcon={Icons.movie} rightIcon={Icons.hamburger} />
               ),
             }}
-          ></Stack.Screen>
+          />
           <Stack.Screen
             name="MovieView"
             component={MovieView}
             options={{ headerShown: false }}
-          ></Stack.Screen>
+          />
           <Stack.Screen
             name="Search"
             component={SearchView}
@@ -55,7 +56,12 @@ const Router = () => {
                 <Header leftIcon={Icons.movie} rightIcon={Icons.hamburger} />
               ),
             }}
-          ></Stack.Screen>
+          />
+          <Stack.Screen
+            name="MovieDetail"
+            component={MovieDetail}
+            options={{}}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

@@ -5,6 +5,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer1.png'),
+    content:
+      'As Gotham drowns in crime and political corruption, a sadistic killer known as The Riddler begins targeting the city’s elite. Batman follows his trail of cryptic clues, uncovering secrets that shake the foundations of Gotham. Along the way, he confronts dangerous figures like Catwoman and Penguin. The case forces Bruce to question everything he thought he knew about justice, power, and his own family.',
   },
   {
     id: 2,
@@ -12,6 +16,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer1.png'),
+    content:
+      'A masked murderer terrorizes Gotham by exposing its hidden corruption, drawing Batman into a complex web of lies. As he deciphers each riddle, Bruce discovers dark truths about the city and the Wayne family legacy. His path crosses with Catwoman, whose motives blur the line between ally and enemy. The investigation transforms Batman into something more than a symbol of fear—into a symbol of hope.',
   },
   {
     id: 3,
@@ -19,6 +27,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'When The Riddler begins assassinating Gotham’s leaders, Batman is thrust into a terrifying mystery that reveals the city’s rotting core. Each clue exposes deeper corruption, leading Bruce into confrontations with the criminal underworld. As he searches for the truth, he is forced to face painful revelations about his parents. This journey tests his limits and reshapes his purpose as Gotham’s protector.',
   },
   {
     id: 4,
@@ -26,6 +38,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'The Riddler’s brutal crimes plunge Gotham into chaos, prompting Batman to investigate a conspiracy rooted in the city’s darkest corners. His pursuit uncovers ties between powerful politicians and organized crime. Alongside Catwoman, he navigates moral gray areas and must choose between vengeance and justice. The case ultimately forces him to redefine what it means to be Batman.',
   },
   {
     id: 5,
@@ -33,6 +49,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'A violent string of murders reveals a hidden network of corruption stretching across Gotham. Batman follows The Riddler’s cryptic messages, uncovering painful truths about the Wayne family’s involvement. As he navigates the criminal underworld, he forms a fragile alliance with Catwoman. The journey pushes Bruce toward emotional breaking points as he learns the cost of becoming Gotham’s symbol.',
   },
   {
     id: 6,
@@ -40,6 +60,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'The Riddler’s twisted murders expose a conspiracy that threatens to tear Gotham apart. Batman dives deeper into the investigation, confronting dangerous figures like Penguin and Falcone. Each revelation forces him to question the integrity of Gotham’s institutions and the truth about his family. Through tragedy and chaos, Bruce discovers that true justice requires more than fear—it demands hope.',
   },
   {
     id: 7,
@@ -47,6 +71,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'As a deadly mastermind targets Gotham’s elite, Batman races to understand The Riddler’s chilling motives. His pursuit takes him into the darkest layers of the city, where corruption runs deeper than he ever imagined. With Catwoman as an unlikely partner, Bruce uncovers secrets that shatter his view of Gotham. The case becomes a turning point that reshapes his identity as a hero.',
   },
   {
     id: 8,
@@ -54,6 +82,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'When Gotham’s leaders begin dying in gruesome ways, Batman confronts The Riddler—a killer exposing the city’s criminal underbelly. Each clue reveals uncomfortable truths about systemic corruption and the Wayne family’s past. Forced to question his mission, Bruce forms new alliances and faces devastating personal revelations. His journey transforms him into a more compassionate symbol of justice.',
   },
   {
     id: 9,
@@ -61,6 +93,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'A wave of politically motivated murders sends Batman on a desperate hunt for The Riddler. His investigation reveals a corrupt network involving Gotham’s most influential figures. Alongside Catwoman, he uncovers emotional and moral truths that shake his faith in his family. The experience forces Bruce to confront the man he is—and the hero he needs to become.',
   },
   {
     id: 10,
@@ -68,6 +104,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'The Riddler’s cruel game of riddles exposes Gotham’s decay and pulls Batman into a high-stakes investigation. As Bruce digs deeper, he discovers how power, money, and crime intertwine within the city. The truth challenges everything he believed about the Wayne legacy. Through this darkness, Batman begins to understand that real strength comes from compassion and purpose.',
   },
   {
     id: 11,
@@ -75,6 +115,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'A sinister killer forces Gotham to face its sins, drawing Batman into a twisted mystery. His pursuit uncovers scandals that involve the police, the government, and even his own family. Along the way, he allies with Catwoman, who challenges his rigid sense of justice. The case marks a profound shift in Bruce’s evolution as Gotham’s guardian.',
   },
   {
     id: 12,
@@ -82,6 +126,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'As The Riddler exposes Gotham’s hypocrisy, Batman must confront the city’s past and the lies built into its foundations. Each clue reveals disturbing truths about corruption and the Wayne family’s hidden role. Partnering with Catwoman, he navigates danger and betrayal. The journey reshapes Batman’s understanding of justice, transforming him into a more hopeful protector.',
   },
   {
     id: 13,
@@ -89,6 +137,10 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'Batman’s hunt for The Riddler leads him through Gotham’s criminal labyrinth, revealing painful secrets about the city and his family. The investigation forces him to consider the consequences of vengeance. With unexpected help from Catwoman, Bruce learns the importance of empathy. This pivotal journey redefines his role as Gotham’s hero.',
   },
   {
     id: 14,
@@ -96,5 +148,9 @@ export default [
     image: require('../assets/images/batman.png'),
     rating: 8.9,
     icon: require('../assets/icons/MovieView/star.png'),
+    name: 'Christian Bale',
+    thumbnail: require('../assets/icons/Trailers/trailer3.png'),
+    content:
+      'As Gotham faces a rising tide of violence, Batman investigates The Riddler’s deadly crusade. His discoveries expose deep-rooted corruption while uncovering tragic truths about the Wayne legacy. Working alongside Catwoman, he faces moral dilemmas that push him toward emotional growth. The experience transforms Batman into a symbol of hope rather than fear.',
   },
 ];

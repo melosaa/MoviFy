@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import colors from '../../styles/colors';
 const { width } = Dimensions.get('window');
-const CARD_WIDTH = width * 0.3;
+const CARD_WIDTH = width * 0.28;
 const CARD_HEIGHT = CARD_WIDTH * 1.4;
 export default StyleSheet.create({
   container: {

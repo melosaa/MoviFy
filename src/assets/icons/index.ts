@@ -18,6 +18,10 @@ const Icons = {
   plus: require('../icons/MovieView/plus.png'),
   right_back: require('../icons/MovieView/right_back.png'),
   searchFavorite: require('../icons/SearchBarView/favorite_icon.png'),
+  filter: require('../icons/SearchBarView/filter.png'),
+  playVideo: require('../icons/Trailers/play_video.png'),
+  starFilled: require('../icons/Trailers/starFilled.png'),
+  starEmpty: require('../icons/Trailers/starEmpty.png'),
 };
 
 export default Icons;

@@ -18,6 +18,7 @@ const SearchView = () => {
           leftIcon={Icons.searchBar}
           placeholder="Search movie,series"
           rightIcon={Icons.voice}
+          filterIcon={Icons.filter}
         />
         <CategoryTabs />
         <View style={styles.text_container}>

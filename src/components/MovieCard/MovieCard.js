@@ -40,8 +40,8 @@ export const MovieCarousel = ({ data = [], navigation }) => {
     const index = Math.round(offsetX / SNAP_INTERVAL);
     setActiveIndex(index);
   };
-  const whenClicked = () => {
-    navigation.navigate('MovieView');
+  const whenClicked = item => {
+    navigation.navigate('MovieView', { movie: item });
   };
 
   const renderItem = ({ item }) => (
@@ -56,7 +56,7 @@ export const MovieCarousel = ({ data = [], navigation }) => {
         image={item.image}
         rating={item.rating}
         starIcon={item.icon}
-        onPress={whenClicked}
+        onPress={whenClicked(item)}
       />
     </View>
   );

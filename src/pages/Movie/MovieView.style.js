@@ -61,4 +61,161 @@ export default StyleSheet.create({
     borderColor: 'rgba(175, 170, 170, 0.45)',
     backdropFilter: 'blur(6px)',
   },
+  sectionText: {
+    color: '#FFFFFFB2',
+    sizw: 17,
+  },
+  bottomContainer: {
+    backgroundColor: colors.backGroundColor,
+    paddingTop: 24,
+    paddingBottom: 16,
+  },
+
+  trailerHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    marginBottom: 12,
+  },
+
+  trailerTitleLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  trailerAccent: {
+    width: 3,
+    height: 18,
+    borderRadius: 999,
+    backgroundColor: '#f4a21e',
+    marginRight: 8,
+  },
+
+  trailerTitle: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: '700',
+  },
+
+  trailerArrows: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+
+  trailerArrow: {
+    color: '#bfbfbf',
+    fontSize: 20,
+  },
+
+  trailerList: {
+    paddingHorizontal: 16,
+  },
+  photoHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    marginBottom: 12,
+  },
+
+  photoTitleLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  photoAccent: {
+    width: 3,
+    height: 18,
+    borderRadius: 999,
+    backgroundColor: '#f4a21e',
+    marginRight: 8,
+  },
+
+  photoTitle: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: '700',
+  },
+
+  photoArrows: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+
+  photoArrow: {
+    color: '#bfbfbf',
+    fontSize: 20,
+  },
+
+  photoList: {
+    paddingHorizontal: 16,
+  },
+  text_container: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginTop: 20,
+    paddingHorizontal: 16,
+  },
+
+  divider: {
+    width: 3,
+    height: 20,
+    backgroundColor: colors.orange,
+    marginRight: 8,
+    marginTop: 2,
+  },
+
+  title: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: 'white',
+    marginBottom: 20,
+  },
+  sectionWrapper: {
+    marginBottom: 30,
+  },
+  commentHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    marginBottom: 12,
+  },
+
+  commentTitleLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  commentAccent: {
+    width: 3,
+    height: 18,
+    borderRadius: 999,
+    backgroundColor: '#f4a21e',
+    marginRight: 8,
+  },
+
+  commentTitle: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: '700',
+  },
+
+  commentArrows: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+
+  commentArrow: {
+    color: '#bfbfbf',
+    fontSize: 12,
+  },
+
+  commentList: {
+    paddingHorizontal: 16,
+  },
 });

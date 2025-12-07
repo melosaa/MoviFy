@@ -10,6 +10,7 @@ const SearchBar = ({
   value,
   leftIcon,
   rightIcon,
+  filterIcon,
 }) => {
   return (
     <View style={styles.container}>
@@ -27,6 +28,15 @@ const SearchBar = ({
       <View style={styles.divider} />
       {rightIcon && (
         <Image source={rightIcon} style={styles.icon} resizeMode="contain" />
+      )}
+      {filterIcon && (
+        <View style={styles.filterWrapper}>
+          <Image
+            source={filterIcon}
+            style={styles.filterIcon}
+            resizeMode="contain"
+          />
+        </View>
       )}
     </View>
   );

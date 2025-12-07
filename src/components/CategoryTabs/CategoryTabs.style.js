@@ -1,22 +1,26 @@
 import { StyleSheet } from 'react-native';
+import colors from '../../styles/colors';
 
 export default StyleSheet.create({
   container: {
-    marginTop: 10,
-    marginBottom: 15,
     flexDirection: 'row',
-    justifyContent: 'flex-start',
-
-    paddingHorizontal: 20,
+    alignItems: 'center',
+    paddingVertical: 8,
+    marginTop: 8,
+    marginBottom: 4,
   },
   tab: {
-    paddingVertical: 6,
-    paddingHorizontal: 8,
-    borderRadius: 20,
-    backgroundColor: '#1f1f1f',
+    minHeight: 30,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    backgroundColor: colors.lightBrown,
+    marginRight: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   tabText: {
-    color: '#FFFF',
+    color: '#FFFFFF80',
     fontSize: 13,
+    fontWeight: '500',
   },
 });
