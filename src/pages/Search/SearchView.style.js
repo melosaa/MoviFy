@@ -1,9 +1,6 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 import colors from '../../styles/colors';
 
-const { width } = Dimensions.get('window');
-const scale = width / 427;
-const BOTTOM_BAR_HEIGHT = 81 * scale;
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -33,7 +30,6 @@ export default StyleSheet.create({
     resizeMode: 'contain',
     color: 'white',
   },
-
   text_container: {
     flexDirection: 'row',
     alignItems: 'flex-start',
@@ -52,8 +48,7 @@ export default StyleSheet.create({
     color: 'white',
   },
   column_wrapper_style: {
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     paddingTop: 20,
-    marginHorizontal: 0,
   },
 });

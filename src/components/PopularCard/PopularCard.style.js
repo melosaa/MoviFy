@@ -1,12 +1,15 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import colors from '../../styles/colors';
+
 const { width } = Dimensions.get('window');
 const CARD_WIDTH = width * 0.28;
 const CARD_HEIGHT = CARD_WIDTH * 1.4;
+
 export default StyleSheet.create({
   container: {
     alignItems: 'center',
     marginBottom: 32,
+    flex: 1,
   },
   inner_container: {
     width: CARD_WIDTH,
@@ -29,7 +32,6 @@ export default StyleSheet.create({
     width: 40,
     height: 40,
   },
-
   gradient: {
     width: '100%',
     height: '100%',
@@ -38,7 +40,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     overflow: 'hidden',
   },
-
   inner_circle: {
     width: 38,
     height: 38,
@@ -47,7 +48,6 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-
   icon: {
     width: 20,
     height: 20,

@@ -4,7 +4,6 @@ export default StyleSheet.create({
   container: {
     width: 200,
     marginRight: 16,
-    marginTop: 20,
   },
   card: {
     borderTopLeftRadius: 16,

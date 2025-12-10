@@ -1,10 +1,9 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { Image, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import styles from './PopularCard.style';
-import Images from '../../assets/images';
 import Icons from '../../assets/icons';
 import colors from '../../styles/colors';
+import styles from './PopularCard.style';
 
 const PopularCard = ({ item }) => {
   return (

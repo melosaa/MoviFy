@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "405303520072",
+    "project_id": "movify-c8f37",
+    "storage_bucket": "movify-c8f37.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405303520072:android:039cae65dde344cbc0217d",
+        "android_client_info": {
+          "package_name": "com.movieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJmMKjl3S7X9HDqbVKG3Qvry-HIvr9_SM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

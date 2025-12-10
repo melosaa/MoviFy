@@ -34,12 +34,6 @@ export default StyleSheet.create({
     color: 'white',
   },
 
-  info_wrapper: {
-    position: 'absolute',
-    width: '100%',
-    bottom: -(BOTTOM_BAR_HEIGHT * 0.3),
-  },
-
   infoCard: {
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
@@ -63,19 +57,19 @@ export default StyleSheet.create({
   },
   sectionText: {
     color: '#FFFFFFB2',
-    sizw: 17,
+    fontsize: 10,
   },
   bottomContainer: {
     backgroundColor: colors.backGroundColor,
     paddingTop: 24,
     paddingBottom: 16,
+    paddingHorizontal: 18,
   },
 
   trailerHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
     marginBottom: 12,
   },
 
@@ -106,17 +100,15 @@ export default StyleSheet.create({
 
   trailerArrow: {
     color: '#bfbfbf',
-    fontSize: 20,
+    width: 18,
+    height: 18,
   },
 
-  trailerList: {
-    paddingHorizontal: 16,
-  },
+  trailerList: {},
   photoHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
     marginBottom: 12,
   },
 
@@ -147,41 +139,20 @@ export default StyleSheet.create({
 
   photoArrow: {
     color: '#bfbfbf',
-    fontSize: 20,
+    width: 18,
+    height: 18,
   },
 
-  photoList: {
-    paddingHorizontal: 16,
-  },
-  text_container: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    marginTop: 20,
-    paddingHorizontal: 16,
-  },
+  photoList: {},
 
-  divider: {
-    width: 3,
-    height: 20,
-    backgroundColor: colors.orange,
-    marginRight: 8,
-    marginTop: 2,
-  },
-
-  title: {
-    fontSize: 20,
-    fontWeight: '700',
-    color: 'white',
-    marginBottom: 20,
-  },
   sectionWrapper: {
-    marginBottom: 30,
+    marginBottom: 10,
+    paddingVertical: 10,
   },
   commentHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
     marginBottom: 12,
   },
 
@@ -215,7 +186,5 @@ export default StyleSheet.create({
     fontSize: 12,
   },
 
-  commentList: {
-    paddingHorizontal: 16,
-  },
+  commentList: {},
 });

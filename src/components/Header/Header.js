@@ -2,7 +2,8 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './Header.style';
-const Header = ({ rightIcon, text, onPress, leftIcon }) => {
+
+const Header = ({ rightIcon, leftIcon }) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header_container}>

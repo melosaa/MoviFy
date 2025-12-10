@@ -25,7 +25,7 @@ export default StyleSheet.create({
     height: 36,
   },
   right_icon: {
-    width: 15,
-    height: 15,
+    width: 20,
+    height: 20,
   },
 });

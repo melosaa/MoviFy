@@ -56,7 +56,7 @@ export const MovieCarousel = ({ data = [], navigation }) => {
         image={item.image}
         rating={item.rating}
         starIcon={item.icon}
-        onPress={whenClicked(item)}
+        onPress={() => whenClicked(item)}
       />
     </View>
   );
@@ -71,7 +71,7 @@ export const MovieCarousel = ({ data = [], navigation }) => {
         data={data}
         keyExtractor={item => item.id.toString()}
         contentContainerStyle={{
-          paddingHorizontal: (screenWidth - CARD_WIDTH) / 2,
+          paddingHorizontal: (screenWidth - CARD_WIDTH) / 16,
         }}
         snapToInterval={SNAP_INTERVAL}
         snapToAlignment="center"

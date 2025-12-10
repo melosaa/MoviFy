@@ -8,7 +8,7 @@ export default StyleSheet.create({
   info_wrapper: {
     position: 'absolute',
     width: '100%',
-    bottom: -(BOTTOM_BAR_HEIGHT * 0.3),
+    bottom: 0,
     flexDirection: 'column',
   },
   infoCard: {
@@ -152,7 +152,12 @@ export default StyleSheet.create({
     height: 24,
     tintColor: 'white',
   },
-  option_text: { color: 'white', fontSize: 12, opacity: 0.8, marginTop: 4 },
+  option_text: {
+    color: 'white',
+    fontSize: 12,
+    opacity: 0.8,
+    marginTop: 4,
+  },
   option_line: {
     height: 2,
     width: '100%',

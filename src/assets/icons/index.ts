@@ -22,6 +22,8 @@ const Icons = {
   playVideo: require('../icons/Trailers/play_video.png'),
   starFilled: require('../icons/Trailers/starFilled.png'),
   starEmpty: require('../icons/Trailers/starEmpty.png'),
+  arrowRight: require('../icons/Trailers/arrow_right.png'),
+  arrowLeft: require('../icons/Trailers/arrow_left.png'),
 };
 
 export default Icons;

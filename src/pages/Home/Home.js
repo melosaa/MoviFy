@@ -10,7 +10,7 @@ import movies from '../../data/movies';
 import { Dimensions } from 'react-native';
 import CategoryTabs from '../../components/CategoryTabs';
 
-const Home = ({ navigation }) => {
+const HomView = ({ navigation }) => {
   return (
     <>
       <View style={styles.container}>
@@ -30,11 +30,11 @@ const Home = ({ navigation }) => {
         <View style={styles.contaniueHeader}>
           <View style={styles.leftDivider} />
           <Text>Continue Watching</Text>
-        </View>{' '}
+        </View>
       </View>
       <BottomBar />
     </>
   );
 };
 
-export default Home;
+export default HomView;

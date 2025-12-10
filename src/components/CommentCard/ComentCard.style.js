@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    paddingHorizontal: 16,
     paddingVertical: 16,
   },
   headerRow: {
@@ -47,7 +46,7 @@ export default StyleSheet.create({
   },
   commentText: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 17,
     lineHeight: 20,
   },
 });

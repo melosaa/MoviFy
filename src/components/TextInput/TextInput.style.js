@@ -11,6 +11,7 @@ export default StyleSheet.create({
     borderColor: '#rgb(65, 65, 65)',
     paddingVertical: 20,
     marginVertical: 10,
+    alignItems: 'center',
   },
   icon: {
     width: 20,

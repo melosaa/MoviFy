@@ -22,6 +22,7 @@ import trailerData from '../../data/movies';
 import CommentCard from '../../components/CommentCard';
 import colors from '../../styles/colors';
 import commentData from '../../data/commentData';
+import SectionWihtList from '../../components/SectionWithList';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -29,7 +30,7 @@ const MovieView = ({ route, navigation }) => {
   const { movie } = route.params || {};
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <ScrollView
         style={{ flex: 1, backgroundColor: colors.backGroundColor }}
         showsVerticalScrollIndicator={false}
@@ -45,7 +46,7 @@ const MovieView = ({ route, navigation }) => {
               style={styles.image}
               resizeMode="cover"
             >
-              <SafeAreaView style={styles.header}>
+              <View style={styles.header}>
                 <TouchableOpacity
                   style={styles.header_button}
                   onPress={() => navigation.goBack()}
@@ -58,10 +59,9 @@ const MovieView = ({ route, navigation }) => {
                 <TouchableOpacity style={styles.header_button}>
                   <Image style={styles.header_icon} source={Icons.hearth} />
                 </TouchableOpacity>
-              </SafeAreaView>
+              </View>
             </ImageBackground>
           </View>
-
           <MovieInfoSheet
             visible={true}
             title="The Batman"
@@ -70,7 +70,6 @@ const MovieView = ({ route, navigation }) => {
             genres={['Action', 'Crime', 'Drama']}
           />
         </View>
-
         <View style={styles.bottomContainer}>
           {/* Description */}
           <View style={styles.sectionWrapper}>
@@ -78,86 +77,41 @@ const MovieView = ({ route, navigation }) => {
               <Text style={styles.sectionText}>{movie?.content}</Text>
             </View>
           </View>
-
-          {/* Cast */}
-          <View style={styles.sectionWrapper}>
-            <View style={styles.text_container}>
-              <View style={styles.divider} />
-              <Text style={styles.title}>Movie List</Text>
-            </View>
-
-            <FlatList
-              data={castData}
-              horizontal
-              keyExtractor={item => item.id.toString()}
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.castList}
-              renderItem={({ item }) => (
-                <CastCard image={item.image} name={item.name} />
-              )}
-            />
-          </View>
-
-          {/* Trailers */}
-          <View style={styles.sectionWrapper}>
-            <View style={styles.trailerHeader}>
-              <View style={styles.trailerTitleLeft}>
-                <View style={styles.trailerAccent} />
-                <Text style={styles.trailerTitle}>Trailers</Text>
-              </View>
-              <View style={styles.trailerArrows}>
-                <Text style={styles.trailerArrow}>‹</Text>
-                <Text style={styles.trailerArrow}>›</Text>
-              </View>
-            </View>
-
-            <FlatList
-              data={trailerData}
-              horizontal
-              keyExtractor={item => item.id.toString()}
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.trailerList}
-              renderItem={({ item }) => (
-                <TrailerCard thumbnail={item.thumbnail} title={item.title} />
-              )}
-            />
-          </View>
-
-          {/* Photos */}
-          <View style={styles.sectionWrapper}>
-            <View style={styles.photoHeader}>
-              <View style={styles.photoTitleLeft}>
-                <View style={styles.photoAccent} />
-                <Text style={styles.photoTitle}>Photos</Text>
-              </View>
-              <View style={styles.photoArrows}>
-                <Text style={styles.photoArrow}>‹</Text>
-                <Text style={styles.photoArrow}>›</Text>
-              </View>
-            </View>
-
-            <FlatList
-              data={trailerData}
-              horizontal
-              keyExtractor={item => item.id.toString()}
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={styles.photoList}
-              renderItem={({ item }) => (
-                <TrailerCard thumbnail={item.thumbnail} title={item.title} />
-              )}
-            />
-          </View>
-          <View style={styles.commentHeader}>
-            <View style={styles.commentTitleLeft}>
-              <View style={styles.commentAccent} />
-              <Text style={styles.commentTitle}>Comments</Text>
-            </View>
-            <View style={styles.commentArrows}>
-              <Text style={styles.commentArrow}>Comments</Text>
-              <Text style={styles.commentArrow}>View All</Text>
-            </View>
-          </View>
-          <FlatList
+          <SectionWihtList
+            data={castData}
+            sectionKey="cast"
+            horizontal
+            keyExtractor={item => item.id.toString()}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.castList}
+            renderItem={({ item }) => (
+              <CastCard image={item.image} name={item.name} />
+            )}
+          />
+          <SectionWihtList
+            sectionKey="trailers"
+            data={castData}
+            horizontal
+            keyExtractor={item => item.id.toString()}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.castList}
+            renderItem={({ item }) => (
+              <TrailerCard thumbnail={item.thumbnail} title={item.title} />
+            )}
+          />
+          <SectionWihtList
+            sectionKey="trailers"
+            data={castData}
+            horizontal
+            keyExtractor={item => item.id.toString()}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.castList}
+            renderItem={({ item }) => (
+              <TrailerCard thumbnail={item.thumbnail} title={item.title} />
+            )}
+          />
+          <SectionWihtList
+            sectionKey="comments"
             data={commentData}
             keyExtractor={item => item.id.toString()}
             scrollEnabled={false}
@@ -173,10 +127,8 @@ const MovieView = ({ route, navigation }) => {
           />
         </View>
       </ScrollView>
-
-      {/* ALTTA SABİT KALACAK */}
       <BottomBar />
-    </View>
+    </SafeAreaView>
   );
 };
 

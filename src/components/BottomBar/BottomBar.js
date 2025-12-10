@@ -1,12 +1,25 @@
-import React from 'react';
-import { TouchableOpacity, View, Text, Image } from 'react-native';
 import { BlurView } from '@react-native-community/blur';
-import Icons from '../../assets/icons/index.ts';
-import styles from './BottomBar.style';
 import { useNavigation } from '@react-navigation/native';
+import React from 'react';
+import { Image, TouchableOpacity, View } from 'react-native';
+import Icons from '../../assets/icons';
+import styles from './BottomBar.style';
+
+const tabs = [
+  { key: 'home', icon: Icons.home, route: 'HomeView' },
+  { key: 'search', icon: Icons.search, route: 'SearchView' },
+  { key: 'favorite', icon: Icons.favorite, route: 'MovieView' },
+  { key: 'profile', icon: Icons.profile, route: 'null' },
+];
 
 const BottomBar = () => {
   const navigation = useNavigation();
+
+  const handlePress = route => {
+    if (!route) return;
+    navigation.navigate(route);
+  };
+
   return (
     <View style={styles.wrapper}>
       <BlurView
@@ -16,21 +29,15 @@ const BottomBar = () => {
         reducedTransparencyFallbackColor="rgba(31,31,31,0.6)"
       />
       <View style={styles.content}>
-        <TouchableOpacity style={styles.item}>
-          <Image style={styles.icon} source={Icons.home}></Image>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.item}
-          onPress={() => navigation.navigate('Search')}
-        >
-          <Image style={styles.icon} source={Icons.search}></Image>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.item}>
-          <Image style={styles.icon} source={Icons.favorite}></Image>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.item}>
-          <Image style={styles.icon} source={Icons.profile}></Image>
-        </TouchableOpacity>
+        {tabs.map(tab => (
+          <TouchableOpacity
+            key={tab.key}
+            style={styles.item}
+            onPress={() => handlePress(tab.route)}
+          >
+            <Image style={styles.icon} source={tab.icon} />
+          </TouchableOpacity>
+        ))}
       </View>
     </View>
   );

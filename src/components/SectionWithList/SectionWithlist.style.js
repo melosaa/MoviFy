@@ -1,21 +1,14 @@
 import { StyleSheet } from 'react-native';
 import colors from '../../styles/colors';
+
 export default StyleSheet.create({
-  container: {
-    backgroundColor: '#1F1F1F',
-    flex: 1,
-    paddingHorizontal: 16,
-  },
-  trends: {
-    color: 'white',
-    fontSize: 14,
-    marginTop: 10,
+  sectionWrapper: {
+    marginTop: 24,
   },
   text_container: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    marginTop: 16,
-    paddingHorizontal: 16,
+    marginTop: 20,
   },
 
   divider: {
@@ -30,12 +23,24 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: '700',
     color: 'white',
+    marginBottom: 20,
+    flex: 1,
+  },
+  rightContainer: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 
-  contaniueHeader: {
-    paddingVertical: 10,
+  arrowIcon: {
+    width: 16,
+    height: 16,
+    tintColor: 'white',
+    marginLeft: 8,
   },
-  carousel_wrapper: {
-    paddingVertical: 20,
+
+  rightText: {
+    color: 'white',
+    marginLeft: 8,
   },
 });
