@@ -1,25 +1,32 @@
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import React from 'react';
-import { Text } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Toast from 'react-native-toast-message';
+import { Provider, useSelector } from 'react-redux';
+
 import Login from './pages/auth/Login/Login';
 import Register from './pages/auth/Register/Register';
 import HomeView from './pages/Home/Home';
-import Icons from './assets/icons';
-import Header from './components/Header';
 import MovieView from './pages/Movie/MovieView';
 import SearchView from './pages/Search';
 import TabNavigation from './navigation/tabNavigation/tabNavigation';
-import Toast from 'react-native-toast-message';
+import FavoriteView from './pages/Favorite/FavoriteView';
 
+import Icons from './assets/icons';
+import Header from './components/Header';
+import AppInitializer from './navigation/appInitializer';
+
+import { store } from './store/store';
 const Stack = createStackNavigator();
 
-const Router = () => {
+const StackScreens = () => {
+  const user = useSelector(state => state.auth.user);
+
   return (
-    <SafeAreaProvider>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName={user ? 'HomeView' : 'Login'}>
+      {!user ? (
+        <>
           <Stack.Screen
             name="Login"
             component={Login}
@@ -30,6 +37,9 @@ const Router = () => {
             component={Register}
             options={{ headerShown: false }}
           />
+        </>
+      ) : (
+        <>
           <Stack.Screen
             name="HomeView"
             component={HomeView}
@@ -39,7 +49,11 @@ const Router = () => {
               ),
             }}
           />
-          <Stack.Screen name="TabNavigation" component={TabNavigation} />
+          <Stack.Screen
+            name="TabNavigation"
+            component={TabNavigation}
+            options={{ headerShown: false }}
+          />
           <Stack.Screen
             name="MovieView"
             component={MovieView}
@@ -54,11 +68,32 @@ const Router = () => {
               ),
             }}
           />
-        </Stack.Navigator>
-      </NavigationContainer>
-      <Toast />
-    </SafeAreaProvider>
+          <Stack.Screen
+            name="FavoriteView"
+            component={FavoriteView}
+            options={{
+              header: () => (
+                <Header leftIcon={Icons.movie} rightIcon={Icons.hamburger} />
+              ),
+            }}
+          />
+        </>
+      )}
+    </Stack.Navigator>
   );
 };
 
-export default Router;
+export default function Router() {
+  return (
+    <Provider store={store}>
+      <AppInitializer>
+        <SafeAreaProvider>
+          <NavigationContainer>
+            <StackScreens />
+          </NavigationContainer>
+          <Toast />
+        </SafeAreaProvider>
+      </AppInitializer>
+    </Provider>
+  );
+}

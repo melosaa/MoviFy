@@ -5,7 +5,6 @@ export default StyleSheet.create({
   container: {
     backgroundColor: colors.backGroundColor,
     flex: 1,
-    paddingHorizontal: 8,
   },
   image: {
     flex: 1,

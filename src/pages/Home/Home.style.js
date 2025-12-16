@@ -14,7 +14,7 @@ export default StyleSheet.create({
   text_container: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    marginTop: 16,
+    marginTop: 10,
     paddingHorizontal: 16,
   },
 

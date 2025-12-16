@@ -8,7 +8,7 @@ import styles from './BottomBar.style';
 const tabs = [
   { key: 'home', icon: Icons.home, route: 'HomeView' },
   { key: 'search', icon: Icons.search, route: 'SearchView' },
-  { key: 'favorite', icon: Icons.favorite, route: 'MovieView' },
+  { key: 'favorite', icon: Icons.favorite, route: 'FavoriteView' },
   { key: 'profile', icon: Icons.profile, route: 'null' },
 ];
 

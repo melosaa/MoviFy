@@ -16,7 +16,7 @@ export default StyleSheet.create({
   input_container: {
     flex: 1,
     fontSize: 15,
-    color: 'black',
+    color: 'white',
     marginHorizontal: 4,
   },
   icon: {

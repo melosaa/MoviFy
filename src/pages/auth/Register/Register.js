@@ -10,6 +10,7 @@ import Images from '../../../assets/images';
 import { registerValidationSchema } from '../../../utils/validation/registerValidation';
 import auth from '@react-native-firebase/auth';
 import Toast from 'react-native-toast-message';
+
 const Register = ({ navigation }) => {
   const handleRegister = async values => {
     const { email, password } = values;

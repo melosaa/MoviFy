@@ -4,10 +4,9 @@ import colors from '../../styles/colors';
 export default StyleSheet.create({
   container: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     paddingVertical: 8,
-    marginTop: 8,
-    marginBottom: 4,
+    marginTop: 16,
   },
   tab: {
     minHeight: 30,

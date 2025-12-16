@@ -4,12 +4,13 @@ import LinearGradient from 'react-native-linear-gradient';
 import Icons from '../../assets/icons';
 import colors from '../../styles/colors';
 import styles from './PopularCard.style';
+import { getTmdbImage } from '../../utils/imagePath/imagePath';
 
 const PopularCard = ({ item }) => {
   return (
     <View style={styles.container}>
       <View style={styles.inner_container}>
-        <Image style={styles.image} source={item.image} />
+        <Image style={styles.image} source={getTmdbImage(item?.poster_path)} />
       </View>
 
       <View style={styles.icon_wrapper}>

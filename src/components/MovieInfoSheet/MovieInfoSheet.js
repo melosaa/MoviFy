@@ -41,7 +41,7 @@ const MovieInfoSheet = ({
               </View>
               <View style={styles.ratingCenter}>
                 <Image style={styles.starIcon} source={Icons.star} />
-                <Text style={styles.ratingText}>8.9</Text>
+                <Text style={styles.ratingText}>{ratingText}</Text>
               </View>
             </View>
             <View style={styles.review_container}>

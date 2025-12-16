@@ -5,26 +5,25 @@ import BottomBar from '../../components/BottomBar';
 import CategoryTabs from '../../components/CategoryTabs';
 import PopularCard from '../../components/PopularCard';
 import SearchBar from '../../components/SearchBar';
-import styles from '../../pages/Search/SearchView.style';
+import styles from '../Search/SearchView.style';
+import { useGetMovieGenresQuery } from '../../services/genresApi';
 import {
   useFilteredTrendingMovies,
   ALL_GENRE,
 } from '../../hooks/useFilteredMovies';
 import { useLazySearchMovieQuery } from '../../services/searchApi';
-const SearchView = () => {
-  const { setSelectedGenre, filteredList } = useFilteredTrendingMovies();
+const FavoriteView = () => {
   const [searchText, setSearchText] = useState('');
   const [triggerSearch, { data: searchData, isFetching }] =
     useLazySearchMovieQuery();
 
   const searchResults = searchData?.results ?? [];
-  const dataToShow = searchText.length > 2 ? searchResults : filteredList;
 
   return (
     <>
       <View style={styles.container}>
         <FlatList
-          data={dataToShow}
+          data={null}
           renderItem={({ item }) => <PopularCard item={item} />}
           keyExtractor={item => String(item.id)}
           numColumns={3}
@@ -44,13 +43,10 @@ const SearchView = () => {
                   if (text.length > 2) triggerSearch(text);
                 }}
               />
-              <CategoryTabs
-                onSelect={value => setSelectedGenre(value)}
-                allValue={ALL_GENRE}
-              />
+
               <View style={styles.text_container}>
                 <View style={styles.divider} />
-                <Text style={styles.title}>Popular Searches</Text>
+                <Text style={styles.title}>My Popular List</Text>
               </View>
 
               {isFetching ? (
@@ -66,4 +62,4 @@ const SearchView = () => {
   );
 };
 
-export default SearchView;
+export default FavoriteView;

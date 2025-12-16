@@ -3,12 +3,13 @@ import colors from '../../styles/colors';
 
 export default StyleSheet.create({
   card: {
-    maxHeight: 500,
     alignItems: 'center',
+    paddingBottom: 24,
   },
   poster: {
     width: '100%',
     aspectRatio: 2 / 3,
+    maxHeight: 400,
     borderRadius: 25,
     resizeMode: 'cover',
     borderWidth: 1,

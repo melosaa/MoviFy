@@ -19,7 +19,9 @@ const MovieCard = ({ title, image, rating, starIcon, onPress }) => {
       <View style={[styles.card, { width: CARD_WIDTH }]}>
         <Image source={image} style={styles.poster} />
 
-        <Text style={styles.title}>{title}</Text>
+        <Text numberOfLines={1} style={styles.title}>
+          {title}
+        </Text>
 
         <View style={styles.ratingRow}>
           {starIcon && <Image source={starIcon} style={styles.starIcon} />}
@@ -41,7 +43,7 @@ export const MovieCarousel = ({ data = [], navigation }) => {
     setActiveIndex(index);
   };
   const whenClicked = item => {
-    navigation.navigate('MovieView', { movie: item });
+    navigation.navigate('MovieView', { movieId: item.id });
   };
 
   const renderItem = ({ item }) => (
@@ -65,7 +67,6 @@ export const MovieCarousel = ({ data = [], navigation }) => {
     <View>
       <FlatList
         horizontal
-        conty
         ref={flatListRef}
         showsHorizontalScrollIndicator={false}
         data={data}

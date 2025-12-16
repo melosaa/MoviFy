@@ -8,51 +8,11 @@ import { Formik } from 'formik';
 import Icons from '../../../assets/icons';
 import Images from '../../../assets/images';
 import { loginValidationSchema } from '../../../utils/validation/loginValidation';
-import auth from '@react-native-firebase/auth';
-import Toast from 'react-native-toast-message';
+import { useLogin } from '../../../hooks/useLogin';
 
-const Login = ({ navigation }) => {
-  const handleLogin = async values => {
-    console.log('tetiklendi');
-    const { email, password } = values;
-    try {
-      const userCredential = await auth().signInWithEmailAndPassword(
-        email,
-        password,
-      );
-      const user = userCredential.user;
-      console.log('Logged in', user);
-      Toast.show({
-        type: 'success',
-        text1: 'Basarili giris yaptiniz',
-      });
-      navigation.navigate('HomeView');
-    } catch (error) {
-      console.log('Logged error', error);
-      if (
-        error.code === 'auth/wrong-password' ||
-        error.code === 'auth/user-not-found' ||
-        error.code === 'auth/invalid-credential'
-      ) {
-        Toast.show({
-          type: 'error',
-          text1: 'Sifre yanlis',
-          text2: 'Lütfen şifreni kontrol et.',
-        });
-      } else if (error.code === 'auth/invalid-email') {
-        Toast.show({
-          type: 'error',
-          text1: 'Geçersiz e-posta',
-          text2: 'Lütfen geçerli bir e-posta adresi gir.',
-        });
-      }
-    }
-    console.log(values);
-  };
+const Login = () => {
+  const { handleLogin, handleSignUp } = useLogin();
 
-  function handleSignUp() {
-    navigation.navigate('Register');
-  }
   return (
     <SafeAreaView style={styles.container}>
       <Formik

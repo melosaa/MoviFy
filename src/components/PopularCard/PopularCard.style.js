@@ -9,7 +9,6 @@ export default StyleSheet.create({
   container: {
     alignItems: 'center',
     marginBottom: 32,
-    flex: 1,
   },
   inner_container: {
     width: CARD_WIDTH,
